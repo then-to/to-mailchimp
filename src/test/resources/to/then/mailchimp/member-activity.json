@@ -1,0 +1,10 @@
+{
+    "Lists.Members.Instance::activity": {
+        "id": "0123456789abcdef",
+        "list_id": "789abcdef"
+    },
+    "authorization": {
+        "apiKey": "examplekey-us1"
+    },
+    "region":"us1"
+}

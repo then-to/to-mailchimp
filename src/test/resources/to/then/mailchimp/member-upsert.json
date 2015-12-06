@@ -1,0 +1,12 @@
+{
+    "Lists.Members.Instance::upsert": {
+        "id": "0123456789abcdef",
+        "list_id": "789abcdef",
+        "email_address": "tester@example.com",
+        "status_if_new": "subscribed"
+    },
+    "authorization": {
+        "apiKey": "examplekey-us1"
+    },
+    "region":"us1"
+}
