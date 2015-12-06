@@ -1,3 +1,15 @@
 language: java
 jdk:
 - oraclejdk8
+deploy:
+  provider: s3
+  access_key_id: AKIAJRXSZUVEN6MH27RQ
+  secret_access_key:
+    secure: OH42gEls6am/NeRSEcVixzXnJswUzSIIHqAZL+oA2hykZa/0UCfMCZlsBsQwKsIx0ixaySM5osMG22Fi00kXYz6hJcoLqee1Ad+gsZanPs+46K31+iPzdAvUfZJJRmXdvoC0bJwJpmAKcOdWahjDxEbiSCbZjiZlNMuKYtAXXAze/Zax0jCGFfIYSgPIvMDTRP6Yu4FJKDqwKBq4sit455IqVmEtDbAEgESclnKuhwaxgDQ6Ukp97G3A0TUKyOUnbttvFpuDcAlhCIvy3ZNYrHlqHBU9XgqlEvEsg00a4diQqGz4WrS4/cxqMjPnsop0018gV3plaEiug+3qgtQLRJNm21HFH01xFrga0J0ECDm6dlnuK/xLGXrHpvWu1v1oVAyVglgZXNKvZXRyuSMbBZo+spmwHzzCNJvT5vAabXLhQ+fbAMMS/QywYLiNyKYUf0Q4Qb2urInMF59pKG3XTP/iEMGFnMMreQtgsfacyKKt5IxyoopUdZsE8A1CFgonOAYP7XWz0p7lF09TNX3l4Ud2ySKGKFndJn6Qgn7C2XDUuwEcIEWbK4pnhZ3ViQntT3fD93oQOvzpTtrh+W4QLgLQngLTwYLvIjYbveW8XkFBBkG6eYa0s0DqjU7OPj1JZ03ARyR89YLef0GnOYwWIwXJ00xAdA5kUbWJgRRUqz4=
+  bucket: deploy.then.to
+  skip_cleanup: true
+  local-dir: target/to.then
+  upload-dir: mailchimp
+  acl: public_read
+  on:
+    repo: then-to/to-mailchimp
